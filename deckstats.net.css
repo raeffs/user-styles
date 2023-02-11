@@ -1,0 +1,13 @@
+#header_right,
+#eventbar_container_outer,
+.deck_footer_row:nth-child(3) {
+  display: none !important;
+}
+
+#deckstats_main_container {
+  margin-right: 0;
+}
+
+#deckbuilder_container_outer {
+  padding-right: var(--theme-page-hpadding);
+}
