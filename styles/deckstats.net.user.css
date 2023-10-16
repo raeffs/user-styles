@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name deckstats.net
+@namespace https://github.com/raeffs
+@version 1.0.0
+@preprocessor default
+==/UserStyle== */
+
+@-moz-document domain('deckstats.net') {
+  /* hide ads */
+  #header_right,
+  .deck_footer_row:nth-child(3) {
+    display: none !important;
+  }
+}
+
+@-moz-document domain('deckstats.net') {
+  /* hide unnecessary sidebar */
+  #eventbar_container_outer {
+    display: none !important;
+  }
+
+  #deckstats_main_container {
+    margin-right: 0;
+  }
+
+  #deckbuilder_container_outer {
+    padding-right: var(--theme-page-hpadding);
+  }
+}
+
+@-moz-document domain('deckstats.net') {
+  /* move comments in deck builder onto same line as card name */
+  .deckbuilder_cards_comment.deckbuilder_cards_comment_on {
+    display: inline-flex !important;
+    margin-left: 12px;
+  }
+}
+
+@-moz-document domain('deckstats.net') {
+  /* hide unnecessary save dialog */
+  div[aria-describedby="deck_dialog_save_success"],
+  .ui-widget-overlay {
+    display: none !important;
+  }
+}

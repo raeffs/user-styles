@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name moxfield.com
+@namespace https://github.com/raeffs
+@version 1.0.0
+@preprocessor default
+==/UserStyle== */
+
+@-moz-document domain('moxfield.com') {
+  /* hide ads */
+  .banner-content-placement,
+  #unauthedvideo,
+  .na-float-closer {
+    display: none !important;
+  }
+
+  div:has(> div > div > .banner-content-placement) {
+    display: none !important;
+  }
+}

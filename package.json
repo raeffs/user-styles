@@ -1,0 +1,10 @@
+{
+  "name": "user-styles",
+  "private": true,
+  "scripts": {
+    "serve": "serve"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

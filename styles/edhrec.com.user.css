@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name edhrec.com
+@namespace https://github.com/raeffs
+@version 1.0.0
+@preprocessor default
+==/UserStyle== */
+
+@-moz-document domain('edhrec.com') {
+  /* hide ads */
+  .mvSidebar1,
+  .mv-ad-box,
+  a[target="_blank"]:not(.btn) {
+    display: none !important;
+  }
+}
