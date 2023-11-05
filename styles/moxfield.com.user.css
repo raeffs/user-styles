@@ -9,7 +9,8 @@
   /* hide ads */
   .banner-content-placement,
   #unauthedvideo,
-  .na-float-closer {
+  .na-float-closer,
+  [aria-label='Close Ad'] {
     display: none !important;
   }
 
