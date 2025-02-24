@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name deckstats.net
 @namespace https://github.com/raeffs
-@version 1.0.0
+@version 1.0.1
 @preprocessor default
 ==/UserStyle== */
 
@@ -9,6 +9,10 @@
   /* hide ads */
   #header_right,
   .deck_footer_row:nth-child(3) {
+    display: none !important;
+  }
+
+  div[aria-describedby="subscriptions_popup_dialog"] {
     display: none !important;
   }
 }
@@ -41,5 +45,14 @@
   div[aria-describedby="deck_dialog_save_success"],
   .ui-widget-overlay {
     display: none !important;
+  }
+}
+
+@-moz-document domain('deckstats.net') {
+  /* hide sidebar on small screens */
+  @media only screen and (max-width: 800px) {
+    #deck_overview_links {
+      display: none !important;
+    }
   }
 }
